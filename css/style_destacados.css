@@ -1,0 +1,50 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/*-- Colores--*/
+:root{
+/* Color Theme Swatches in RGBA */
+--secundario: rgba(212, 139, 159, 1);
+--primario:rgba(1, 57, 116, 1);
+--cuarto: rgba(85, 123, 162, 1);
+--quinto:rgba(251, 242, 245, 1);
+--tercero:rgba(30, 30, 30, 1);
+--colorbody: white;
+
+/*-- Fuentes y tipografias--*/
+--fuenteprincipal:'Barlow Condensed', sans-serif;
+--fuentetexto: 'Roboto', sans-serif;
+--fuentetexto2: 'Oswald', sans-serif;
+}
+
+/*-- Body--*/
+
+.body{
+    background-color: white;
+}
+
+/*-----Productos destacados-----*/
+.destacados {
+    background-image: url(../img/slider/4.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 390px;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    font-family: var(--fuenteprincipal);
+}
+
+.destacados h1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 30px;
+}

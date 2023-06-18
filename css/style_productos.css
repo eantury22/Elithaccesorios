@@ -1,0 +1,293 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/*-- Fuentes de google fonts--*/
+
+/*-- Colores--*/
+:root{
+/* Color Theme Swatches in RGBA */
+--secundario: rgba(212, 139, 159, 1);
+--primario:rgba(1, 57, 116, 1);
+--cuarto: rgba(85, 123, 162, 1);
+--quinto:rgba(251, 242, 245, 1);
+--tercero:rgba(30, 30, 30, 1);
+--colorbody: white;
+
+/*-- Fuentes y tipografias--*/
+--fuenteprincipal:'Barlow Condensed', sans-serif;
+--fuentetexto: 'Roboto', sans-serif;
+--fuentetexto2: 'Oswald', sans-serif;
+}
+
+/*-- Body--*/
+
+.body{
+    background-color: white;
+    min-width: 360px;
+}
+
+/*--Nav productos--*/
+.cat{
+    height: 190px;
+    padding-top: 130px;
+    background-color: var(--primario);
+}
+
+.cat ul{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: auto;
+}
+
+.cat ul li{
+    margin: 0px 15px;
+}
+
+.cat ul li a{
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: var(--fuenteprincipal);
+    border-bottom: 1px solid var(--secundario);
+    text-decoration: none;
+}
+
+.cat ul li a:hover{
+}
+
+@media only screen and (max-width: 671px){
+    .cat{
+        height: 320px;
+    }
+    .cat ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    .cat ul li{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: right;
+        margin: 3px 0px;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .cat ul{
+        width: 60%;
+    }
+}
+
+/*--Historial superior--*/
+
+.historial{
+    height: 25px;
+    padding-left: 100px;
+    display: flex;
+    align-items: baseline;
+    margin: 30px 0px;
+}
+.historial a{
+    color: var(--primario);
+    font-size: 16px;
+    font-family: var(--fuenteprincipal);
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+.historial img{
+    height: 40%;
+}
+
+/*--Historial inferior--*/
+
+.historial2{
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 30px 0px;
+}
+.historial2 p{
+    color: var(--primario);
+    font-size: 16px;
+    font-family: var(--fuenteprincipal);
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+.historial2 a{
+    height: 100%;
+}
+.historial2 a img{
+    height: 60%;
+    margin-bottom: 3px;
+}
+
+/*--Productos--*/
+.contenedorp{
+    width: 100%;
+}
+
+.cjproductos{
+    width: 80%;
+}
+
+.artprod{
+    display: flex;
+    justify-content: center;
+}
+.cajaprod{
+    height: 420px;
+    width: 260px;
+}
+.prod{
+    position: relative;
+    height: 80%;
+    width: 100%;
+}
+
+.prod img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.prod img.top:hover {
+    opacity: 0;
+  }
+
+.cjtexto{
+    height: 20%;
+}
+
+.cjtexto a{
+    color: var(--tercero);
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-family: var(--fuenteprincipal);
+    font-size: 22px;
+    padding-top: 15px;
+}
+
+.cjtexto p{
+    height: 40%;
+    color: var(--secundario);
+    font-weight: 300;
+    font-family: var(--fuentetexto2);
+    font-size: 16px;
+    padding-top: 8px;
+}
+
+@media only screen and (max-width: 1450px){
+    .cjproductos{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 1360px){
+    .cjproductos{
+        width: 88%;
+    }
+}
+
+@media only screen and (max-width: 1320px){
+    .cjproductos{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1280px){
+    .cjproductos{
+        width: 92%;
+    }
+}
+@media only screen and (max-width: 1260px){
+    .cjproductos{
+        width: 88%;
+    }
+    .cajaprod{
+        height: 400px;
+        width: 240px;
+    }
+}
+@media only screen and (max-width: 1220px){
+    .cajaprod{
+        height: 390px;
+        width: 230px;
+    }
+}
+@media only screen and (max-width: 1170px){
+    .cajaprod{
+        height: 380px;
+        width: 220px;
+    }
+}
+@media only screen and (max-width: 1120px){
+    .cajaprod{
+        height: 370px;
+        width: 210px;
+    }
+}
+@media only screen and (max-width: 1070px){
+    .cjproductos{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 1040px){
+    .cjproductos{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .cjproductos{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 890px){
+    .cjproductos{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .cajaprod{
+        height: 440px;
+        width: 280px;
+    }
+}
+@media only screen and (max-width: 690px){
+    .cajaprod{
+        height: 420px;
+        width: 260px;
+    }
+}
+@media only screen and (max-width: 650px){
+    .cajaprod{
+        height: 390px;
+        width: 230px;
+    }
+}
+@media only screen and (max-width: 576px){
+    .cajaprod{
+        height: 450px;
+        width: 290px;
+    }
+}
+
+
+
+

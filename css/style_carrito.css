@@ -1,0 +1,310 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/*-- Colores--*/
+:root{
+/* Color Theme Swatches in RGBA */
+--secundario: rgba(212, 139, 159, 1);
+--primario:rgba(1, 57, 116, 1);
+--cuarto: rgba(85, 123, 162, 1);
+--quinto:rgba(251, 242, 245, 1);
+--tercero:rgba(30, 30, 30, 1);
+--colorbody: white;
+
+/*-- Fuentes y tipografias--*/
+--fuenteprincipal:'Barlow Condensed', sans-serif;
+--fuentetexto: 'Roboto', sans-serif;
+--fuentetexto2: 'Oswald', sans-serif;
+}
+
+/*-- Body--*/
+.body{
+    background-color: white;
+}
+
+/*-----Carrito de compras-----*/
+.titcarrito {
+    padding-top: 100px;
+    width: 100%;
+    height: 210px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.titcarrito h2{
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--tercero);
+    font-family: var(--fuenteprincipal);
+    height: 60%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.titcarrito a{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: var(--secundario);
+    font-family: var(--fuentetexto2);
+    font-weight: 300;
+    font-size: 18px;
+}
+
+/*--carrito--*/
+.secarrito{
+    width: 100%;
+    height: 350px;
+    padding: 0px 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.carrito{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.descripcto1{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.descripcto2, .descripcto3, .descripcto4, .descripcto5{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tipopd1, .tipopd2, .tipopd3{
+    width: 100%;
+    height: 20%;
+    font-family: var(--fuentetexto2);
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--primario);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px var(--primario);
+}
+
+/*--Producto*/
+.ptocto{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 75%;
+    width: 100%;
+}
+.mcimg{
+    width: 35%;
+    height: 100%;
+    margin-right: 5%;
+}
+.mcimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.descpto{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: var(--fuentetexto2);
+    font-size: 18px;
+    text-align: left;
+    font-weight: 300;
+}
+/*--Cancelar*/
+.cancelar{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cancelar img{
+    width: 25px;
+    height: 25px;
+}
+
+/*--Precio*/
+.precioycantidad{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    width: 100%;
+    font-family: var(--fuentetexto2);
+    font-size: 18px;
+    text-align: left;
+    font-weight: 300;
+}
+
+/*--Total*/
+.totalval{
+    width: 95%;
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: solid 1px var(--primario);
+    margin: auto;
+}
+.items{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: center;
+}
+.subtotalval{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-family: var(--fuentetexto2);
+    font-size: 22px;
+    font-weight: 400;
+}
+.tval{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fuentetexto2);
+    font-size: 22px;
+    font-weight: 400;
+    margin:0% 1%;
+}
+
+.btnsubt{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.btnsubt a{
+    background-color: var(--secundario);
+    font-family: var(--fuentetexto2);
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 50px;
+    font-weight: 300;
+    color: white;
+    margin-right: 50px;
+}
+
+/*--Media queries--*/
+@media only screen and (max-width: 992px){
+    .btnsubt a{
+        font-size: 18px;
+    }
+    .subtotalval{
+        font-size: 18px;
+    }
+    .tval{
+        font-size: 18px;
+    }
+    .mcimg{
+        width: 45%;
+    }
+    .descpto{
+        width: 50%;
+        font-size: 16px;
+    }
+    .precioycantidad{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .subtotalval{
+        font-size: 16px;
+    }
+    .tval{
+        font-size: 16px;
+    }
+    .mcimg{
+        width: 55%;
+    }
+    .descpto{
+        width: 40%;
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 598px){
+    .subtotalval{
+        width: 60%;
+    }
+    .tval{
+        width: 30%;
+        justify-content: flex-end;
+    }
+    .secarrito{
+        height: 700px;
+    }
+    .carrito{
+        width: 100%;
+        height: 80%;
+        display: block;
+    }
+    .descripcto1{
+        width: 100%;
+        height: 29%;
+    }
+    .descripcto2, .descripcto3, .descripcto4, .descripcto5{
+        width: 100%;
+        height: 17%;
+    }
+    /*--Total*/
+    .totalval{
+        height: 15%;
+    }
+    .cancelar{
+        align-items: flex-start;
+    }
+    .btnsubt{
+        padding-bottom: 30px;
+    }
+
+    .tipopd1{
+        border-bottom: solid 1px var(--primario);
+    }
+    .tipopd2{
+    }
+    .tipopd3{
+        padding-bottom: 10px;
+        border-bottom: solid 1px var(--primario);
+    }
+    .mcimg{
+        width: 30%;
+        height: 90%;
+    }
+    .descpto{
+        width: 55%;
+        font-size: 16px;
+        height: 90%;
+    }
+    .totalval{
+        width: 100%;
+    }
+}
+    

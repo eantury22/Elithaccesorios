@@ -1,0 +1,575 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-- Fuentes de google fonts--*/
+
+/*-- Colores--*/
+:root{
+    /* Color Theme Swatches in RGBA */
+    --secundario: rgba(212, 139, 159, 1);
+    --primario:rgba(1, 57, 116, 1);
+    --cuarto: rgba(85, 123, 162, 1);
+    --quinto:rgba(251, 242, 245, 1);
+    --tercero:rgba(30, 30, 30, 1);
+    --colorbody: white;
+    
+    /*-- Fuentes y tipografias--*/
+--fuenteprincipal:'Barlow Condensed', sans-serif;
+--fuentetexto: 'Roboto', sans-serif;
+--fuentetexto2: 'Oswald', sans-serif;
+    }
+    /*-- Body--*/
+    
+.body{
+    background-color: white;
+    font-family: var(--fuenteprincipal);
+}
+
+/*--Historial superior--*/
+
+.historial{
+    padding-top: 130px;
+    height: 25px;
+    padding-left: 150px;
+    display: flex;
+    align-items: flex-end;
+}
+.historial a{
+    color: var(--primario);
+    font-size: 16px;
+    font-family: var(--fuenteprincipal);
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+.historial img{
+    height: 40%;
+}
+
+.cajadetalle {
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fuenteprincipal);
+}
+.cart {
+    height: 700px;
+    width: 80%;
+    padding: 30px 50px;
+    margin: auto;
+}
+.row1 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*---descripcion---*/
+
+.descproducto{
+}
+.product-title{
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0px;
+    font-family: var(--fuenteprincipal);
+}
+
+.fas{
+    margin: 3px;
+}
+
+.far{
+    margin: 3px;
+}
+
+.descproducto{
+    height: 100%;
+}
+.descproducto h1{
+    width: 100%;
+    text-transform: uppercase;
+    font-family: var(--fuenteprincipal);
+}
+
+#ProductImg {
+    margin-bottom: 15px;
+    height: 70%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+/*---fotos---*/
+
+.imgdet{
+    height: 100%;
+    min-height: 250px;
+}
+
+.small-imgs {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 20%;
+}
+.small-img {
+    cursor: pointer;
+    width: 23%;
+    object-fit: cover;
+}
+
+.condicion{
+    width: 100%;
+    height: 90px;
+}
+.condiciones{
+    font-size: 14px;
+    font-weight: 300;
+    height: 50px;
+    font-family: var(--fuentetexto2);
+}
+.disponible{
+    border-bottom: solid 1px var(--primario);
+    color: var(--primario);
+    font-size: 18px;
+    font-weight: 500;
+    height: 30px;
+}
+
+.condicion2{
+    width: 100%;
+    height: 50px;
+    color: var(--primario);
+    font-size: 12px;
+}
+
+.price {
+    margin: 15px 0px;
+}
+.price span:first-child {
+    font-size: 30px;
+    font-weight: 400;
+    margin-right: 10px;
+    color: var(--secundario);
+}
+.price span:last-child {
+    color: var(--primario);
+    text-decoration: line-through;
+    font-size: 19px;
+}
+
+#Details {
+    display: none;
+}
+
+.compra{
+    width: 100%;
+    margin-top: 20px;
+    height: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+}
+.qty{
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 10px;
+}
+
+.qty p{
+    margin-right: 15px;
+}
+
+.custom-select{
+    width: 70px;
+    border: solid 1px var(--primario);
+    text-align: center;
+}
+
+.buttons{
+}
+.comprabtn{
+}
+
+.btncompra{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.custom-btn1 {
+    background: var(--primario);
+    display: block;
+    width: 90%;
+    margin:10px 5px 0px 0px;
+
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+
+    padding: 6px 12px;
+    transition: 0.3s;
+}
+.custom-btn3 {
+    display: block;
+    width: 9%;
+    transition: 0.3s;
+    margin: 10px 0px 0px 10px;
+}
+.custom-btn3 img {
+    width: 100%;
+}
+
+.custom-btn2{
+    background-color: var(--secundario);
+    display: block;
+    width: 100%;
+
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: var(--fuenteprincipal);
+
+    padding: 6px;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+.custom-btn:hover {
+}
+
+
+.size,
+.quantity {
+    cursor: pointer;
+}
+.size:focus,
+.quantity:focus {
+    border-color: #919191 !important;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0, 0, 0, 0.25) !important;
+}
+
+
+/*---tab descripcion---*/
+
+.product-inf{
+    margin: 20px 0px;
+}
+
+  .contacor {
+  }
+  
+  .accordion .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .accordion .accordion-item button[aria-expanded=true] {
+    border-bottom: 1px solid var(--secundario);
+  }
+  .accordion button {
+    background-color: white;
+    position: relative;
+    display: block;
+    width: 100%;
+
+    text-align: left;
+    padding: 8px 0px;
+    color: var(--primario);
+    font-size: 18px;
+    font-weight: 300;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+  }
+  .accordion button:hover, .accordion button:focus {
+    cursor: pointer;
+    color: var(--secundario);
+  }
+  .accordion button:hover::after, .accordion button:focus::after {
+    cursor: pointer;
+    color: var(--secundario);
+    border: 1px solid var(--secundario);
+  }
+
+.accordion-title {
+    padding: 10px 24px 10px 0;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: var(--fuenteprincipal);
+  }
+  .accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+  }
+  .accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+  }
+  .accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+  }
+  .accordion button[aria-expanded=true] {
+    color: var(--secundario);
+  }
+  .accordion button[aria-expanded=true] .icon::after {
+    width: 0;
+  }
+  .accordion button[aria-expanded=true] + .accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+  }
+  .accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+  }
+  .accordion .accordion-content p {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 15px 0px;
+    font-family: var(--fuentetexto2);
+  }
+
+/*--Productos--*/
+.contenedorp{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.contenedorp p{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--cuarto);
+    margin-bottom: 30px;
+    font-family: var(--fuentetexto2);
+}
+
+.cjproductos{
+    width: 80%;
+}
+
+.artprod{
+    display: flex;
+    justify-content: center;
+}
+.cajaprod{
+    height: 420px;
+    width: 260px;
+}
+.prod{
+    position: relative;
+    height: 80%;
+    width: 100%;
+}
+
+.prod img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.prod img.top:hover {
+    opacity: 0;
+  }
+
+.cjtexto{
+    height: 20%;
+}
+
+.cjtexto a{
+    color: var(--tercero);
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-family: var(--fuenteprincipal);
+    font-size: 22px;
+    padding-top: 15px;
+}
+
+.cjtexto p{
+    height: 40%;
+    color: var(--secundario);
+    font-weight: 300;
+    font-family: var(--fuentetexto2);
+    font-size: 16px;
+    padding-top: 8px;
+}
+
+@media only screen and (max-width: 1450px){
+    .cjproductos{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 1360px){
+    .cjproductos{
+        width: 88%;
+    }
+}
+
+@media only screen and (max-width: 1320px){
+    .cjproductos{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1280px){
+    .cjproductos{
+        width: 92%;
+    }
+}
+@media only screen and (max-width: 1260px){
+    .cjproductos{
+        width: 88%;
+    }
+    .cajaprod{
+        height: 400px;
+        width: 240px;
+    }
+}
+@media only screen and (max-width: 1220px){
+    .cajaprod{
+        height: 390px;
+        width: 230px;
+    }
+}
+@media only screen and (max-width: 1170px){
+    .cajaprod{
+        height: 380px;
+        width: 220px;
+    }
+}
+@media only screen and (max-width: 1120px){
+    .cajaprod{
+        height: 370px;
+        width: 210px;
+    }
+}
+@media only screen and (max-width: 1070px){
+    .cjproductos{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 1040px){
+    .cjproductos{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .cjproductos{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 890px){
+    .cjproductos{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .cajaprod{
+        height: 440px;
+        width: 280px;
+    }
+}
+@media only screen and (max-width: 690px){
+    .cajaprod{
+        height: 420px;
+        width: 260px;
+    }
+}
+@media only screen and (max-width: 650px){
+    .cajaprod{
+        height: 390px;
+        width: 230px;
+    }
+}
+@media only screen and (max-width: 576px){
+    .cajaprod{
+        height: 450px;
+        width: 290px;
+    }
+}
+
+/*--car--*/
+
+@media only screen and (max-width: 992px){
+    .cart {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .qty {
+        margin-top: 28px;
+    }
+    .cart {
+        height: 200vh;
+        width: 70%;
+    }
+    .row1 {
+        height: 50%;
+    }
+
+    .descproducto{
+        height: 100%;
+    }
+
+    .compra{
+        height: 35px;
+        margin: 0px;
+    }
+    .custom-btn3, .custom-btn1{
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width: 568px){
+    .cart {
+        width: 80%;
+        height: 190vh;
+    }
+}

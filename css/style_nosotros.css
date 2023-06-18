@@ -1,0 +1,472 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/*-- Colores--*/
+:root{
+/* Color Theme Swatches in RGBA */
+--secundario: rgba(212, 139, 159, 1);
+--primario:rgba(1, 57, 116, 1);
+--cuarto: rgba(85, 123, 162, 1);
+--quinto:rgba(251, 242, 245, 1);
+--tercero:rgba(30, 30, 30, 1);
+--colorbody: white;
+
+/*-- Fuentes y tipografias--*/
+--fuenteprincipal:'Barlow Condensed', sans-serif;
+--fuentetexto: 'Roboto', sans-serif;
+--fuentetexto2: 'Oswald', sans-serif;
+}
+
+/*-- Body--*/
+.body{
+    background-color: white;
+}
+
+/*-----Nosotros-----*/
+.nosotros {
+    background-color: var(--primario);
+    width: 100%;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.nosotros h1{
+    width: 80%;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+    font-family: var(--fuenteprincipal);
+    padding-bottom: 30px;
+}
+
+/*--Quienes somos--*/
+
+.contnosotros {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    height: 320px;
+  }
+  .contnosotros .cjns{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+  
+  .contnosotros  .textons {
+    padding: 0px 20px;
+    height: 100%;
+    color: var(--tercero);
+  }
+
+  .contnosotros  .textons h3 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    
+    font-family: var(--fuentetexto2);
+    font-weight: 400;
+  }
+
+  .contnosotros  .textons p {
+    width: 100%;
+    height: 60%;
+    font-family: var(--fuentetexto2);
+    font-weight: 200;
+    font-size: 18px;
+}
+  
+  .contnosotros .imgns {
+    height: 100%;
+  }
+  
+  .contnosotros  .imgns img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+/*---Media queries---*/
+
+@media screen and (max-width:1335px) {}
+
+@media screen and (max-width:1200px) {
+    .contnosotros {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .contnosotros {
+        height: 420px;
+        width: 90%;
+    }
+    .contnosotros  .textons p {
+        height: 65%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .contnosotros {
+        height: 650px;
+        width: 80%;
+    }
+
+    .contnosotros  .textons {
+        height: 60%;
+      }
+    
+      .contnosotros .imgns {
+        height: 40%;
+        display: flex;
+        justify-content: center;
+      }
+      .contnosotros .imgns img{
+        width: 100%;
+      }
+}
+@media screen and (max-width:578px) {}
+
+/*--Frase--*/
+
+.contnosotros2 {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    height: 230px;
+    padding: 30px 0px;
+}
+
+  .contnosotros2 .cjns{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+  
+  .contnosotros2  .textons {
+    padding: 0px 20px;
+    height: 100%;
+    width: 50%;
+    color: var(--tercero);
+}
+
+  .contnosotros2  .textons p {
+    width: 100%;
+    height: 100%;
+    font-family: var(--fuentetexto2);
+    font-weight: 300;
+    font-size: 20px;
+    text-align: right;
+    color: var(--secundario);
+    display: flex;
+    align-items: center;
+}
+  
+  .contnosotros2 .imgns {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contnosotros2  .imgns img {
+    height: 100%;
+    width: 65%;
+    object-fit: cover;
+  }
+
+/*---Media queries---*/
+
+  @media screen and (max-width: 1245px) {
+      .contnosotros2 .imgns img {
+        width: 100%;
+      }
+}
+
+  @media screen and (max-width:768px) {
+    .contnosotros2 {
+        height: 400px;
+        width: 80%;
+    }
+
+    .contnosotros2  .textons {
+        height: 50%;
+      }
+    
+      .contnosotros2 .imgns {
+        height: 50%;
+        display: flex;
+        justify-content: center;
+      }
+      .contnosotros2 .imgns img {
+        width: 60%;
+      }
+}
+
+  /*--Historia--*/
+
+  .contnosotros3 {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    height: 430px;
+  }
+  .contnosotros3 .cjns{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+  
+  .contnosotros3  .textons {
+    padding: 0px 20px;
+    height: 100%;
+    color: var(--tercero);
+  }
+
+  .contnosotros3  .textons h3 {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    
+    font-family: var(--fuentetexto2);
+    font-weight: 400;
+  }
+
+  .contnosotros3  .textons p {
+    width: 100%;
+    height: 75%;
+    font-family: var(--fuentetexto2);
+    font-weight: 200;
+    font-size: 18px;
+}
+  
+  .contnosotros3 .imgns {
+    height: 100%;
+    display: flex;
+    justify-content: right;
+  }
+  
+  .contnosotros3  .imgns img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+/*---Media queries---*/
+
+@media screen and (max-width:1335px) {
+    .contnosotros3 {
+        height: 350px;
+    }
+    .contnosotros3 .imgns img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .contnosotros3 {
+        height: 440px;
+    }
+    .contnosotros3 .imgns img{
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .contnosotros3 {
+        height: 530px;
+        width: 90%;
+    }
+    .contnosotros3  .textons p {
+        height: 75%;
+    }
+    .contnosotros3 .imgns img{
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .contnosotros3 {
+        height: 750px;
+        width: 80%;
+    }
+
+    .contnosotros3  .textons {
+        height: 60%;
+      }
+    
+      .contnosotros3 .imgns {
+        height: 40%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .contnosotros3 .imgns img {
+        width: 100%;
+      }
+}
+@media screen and (max-width:578px) {}
+
+/* ------------ equipo -------------*/
+
+#equipo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 8px;
+  margin-bottom: 20px;
+}
+
+#equipo h3 {
+  width: 100%;
+  text-align: center;
+  font-family: var(--fuentetexto2);
+  font-weight: 400;
+  color: var(--tercero);
+  margin: 20px 0px;
+}
+
+#equipo .contequipo {
+  width: 95%;
+  height: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 30px;
+}
+
+#equipo .chef {
+  width: 25%;
+  height: 100%;
+  position: relative;
+  margin-right: 30px;
+  text-align: center;
+}
+
+#equipo .borde {
+  width: 100%;
+  height: 79%;
+  margin-top: 10px;
+  border: 4px solid rgba(255, 255, 255, 0);
+}
+
+#equipo .marco {
+  width: 94%;
+  height: 98%;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+
+#equipo .marco img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 8px;
+}
+
+#equipo .marco .redes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: 0.4s;
+  transform: scale(0);
+  background-color: rgba(212, 139, 158, 0.619);
+  margin-top: 8px;
+}
+
+#equipo .marco:hover .redes {
+  transform: scale(1);
+}
+
+#equipo .marco .redes img {
+  height: 45px;
+}
+
+#equipo .chef h3 {
+  width: 100%;
+  color: var(--primario);
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-family: var(--fuenteprincipal);
+}
+
+#equipo .chef p {
+  width: 100%;
+  color: var(--negro);
+  font-size: 18px;
+  margin-top: 7px;
+  font-family: var(--fuenteprincipal);
+}
+
+/*---Media queries---*/
+
+@media screen and (max-width:1335px) {}
+
+@media screen and (max-width:1200px) {
+  
+  /*-- equipo --*/
+
+  #equipo .contequipo {
+      width: 100%;
+      height: 450px;
+      display: flex;
+      justify-content: center;
+  }
+  
+  #equipo .chef {
+      width: 35%;
+      height: 100%;
+      max-width: 330px;
+  }
+  
+  #equipo .borde {
+      width: 100%;
+      height: 80%;
+  }
+  
+  #equipo .marco {
+      width: 93%;
+      height: 97%;
+  }
+  #equipo .chef h3 {
+      font-size: 16px;
+  }
+  .pildora2 {
+      margin-top: 20px;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+
+  /*-- equipo --*/
+
+  #equipo .contequipo {
+      height: 1000px;
+  }
+  
+  #equipo .chef {
+    width: 50%;
+    height: 50%;
+    max-width: 500px;
+    padding-bottom: 30px;
+  }
+  
+  #equipo .borde {
+      height: 85%;
+  }
+}
